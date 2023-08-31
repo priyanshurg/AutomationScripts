@@ -1,0 +1,34 @@
+holemake () {
+        hole2 < hole.inp > hole_out.txt
+        egrep "mid-|sampled" hole_out.txt > hole_out.tsv
+        sph2qpt
+        qpt_conv
+}
+
+alias qpt_conv="/workspace/OrganizedFiles/Softwares/hole2/exe/qpt_conv"
+alias sph2qpt="sph_process -dotden 15 -color hole_out.sph dotsurface.qpt"
+
+
+holeAutomate () {
+				for i in {1..100}
+				do
+				hole2 < hole.inp > Outputs/hole_out$i.txt
+				egrep "mid-|sampled" Outputs/hole_out$i.txt > Outputs/hole_out$i.tsv
+				sph_process -dotden 15 -color hole_out.sph Outputs/dotsurface$i.qpt
+				cd Outputs/
+				qpt_conv
+				rm *.qpt
+				cd ..
+				rm *.sph
+				done
+				}
+				
+				
+holeShow.tcl
+for {set i 1} {$i<3} {incr i} {
+mol new 1u7g.pdb
+mol modstyle top top NewRibbons
+cd Outputs/
+source dotsurface$i.vmd_plot
+cd ..
+}
