@@ -1,5 +1,5 @@
 proc loadh {j} {
-set k [expr $j+100]
+set k [expr $j+10]
 for {set i $j} {$i<$k} {incr i} {
 mol new prot.pdb
 mol delrep 0 top
