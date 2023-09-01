@@ -2,7 +2,6 @@ proc loadh {j} {
 set k [expr $j+100]
 for {set i $j} {$i<$k} {incr i} {
 mol new prot.pdb
-#mol modstyle top top NewRibbons
 mol delrep 0 top
 cd Outputs/
 source dotsurface$i.vmd_plot
