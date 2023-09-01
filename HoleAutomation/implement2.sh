@@ -2,7 +2,7 @@
 
 #qpt_conv
 
-                                for i in {1..3}
+                                for i in {1..100}
                                 do
                                 hole < hole.inp > Outputs/hole_out$i.txt
                                 egrep "mid-|sampled" Outputs/hole_out$i.txt > Outputs/hole_out$i.tsv
