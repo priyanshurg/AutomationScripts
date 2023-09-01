@@ -1,3 +1,5 @@
 # AutomationScripts
 Holding my Generic Automation Scripts
-Fiafo
+
+To update: 
+1)$gitpush "CommitDescription"
