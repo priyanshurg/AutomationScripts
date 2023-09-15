@@ -1,0 +1,36 @@
+PSF
+
+       4 !NTITLE
+ REMARKS original generated structure x-plor psf file
+ REMARKS topology 1qj8_autopsf-temp.top 
+ REMARKS topology Sod_autopsf-temp.top 
+ REMARKS segment XO1 { first none; last none; auto angles dihedrals }
+
+       1 !NATOM
+       1 XO1  0    SOD  SOD  SOD    1.000000       22.9898           0
+
+       0 !NBOND: bonds
+
+
+       0 !NTHETA: angles
+
+
+       0 !NPHI: dihedrals
+
+
+       0 !NIMPHI: impropers
+
+
+       0 !NDON: donors
+
+
+       0 !NACC: acceptors
+
+
+       0 !NNB
+
+       0
+
+       1       0 !NGRP
+       0       0       0
+
