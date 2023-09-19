@@ -1,3 +1,13 @@
+# for i in m01p01 m0103 m0305 m0507 m0709 m0911 m1113 m1315 m1517 m1719 m1921 m2123 m2325 m2527 m2729 p0103 p0305 p0507 p0709 p0911 p1113 p1315 p1517 p1719 p1921 p2123 p2325 p2527 p2729;
+# do cp BaseFiles/restrain.in $i;
 
-for i in */;do cp jobscript.sbatch $i;done
-#for i in */;do cp -r m01p01/* $i;done
+# done
+
+
+
+
+for i in m01p01 m0103 m0305 m0507 m0709 m0911 m1113 m1315 m1517 m1719 m1921 m2123 m2325 m2527 m2729 p0103 p0305 p0507 p0709 p0911 p1113 p1315 p1517 p1719 p1921 p2123 p2325 p2527 p2729;
+do 
+cp -r $1 $i/
+echo $i
+done
